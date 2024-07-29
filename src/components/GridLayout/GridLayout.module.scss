@@ -1,0 +1,9 @@
+@import '../../styles/breakpoints.scss';
+.gridLayoutRoot {
+  margin-right: var(--size-ml);
+  margin-left: var(--size-ml);
+  @include tablet {
+    margin-right: var(--size-xxl);
+    margin-left: var(--size-xxl);
+  }
+}

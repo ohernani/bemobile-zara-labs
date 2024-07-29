@@ -1,0 +1,41 @@
+.swiperRoot {
+  overflow: hidden;
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  position: relative;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &__CardWrapper {
+    display: flex;
+    column-gap: 16px;
+    transition: transform 0.5s ease;
+    user-select: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__progressBarContainer {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-grey);
+    margin-top: 24px;
+    overflow: hidden;
+
+    &__progressBar {
+      height: 100%;
+      background-color: var(--color-red);
+      transition: width 0.3s ease;
+    }
+  }
+}

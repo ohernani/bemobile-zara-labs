@@ -1,0 +1,42 @@
+@import '../../styles/breakpoints.scss';
+.characterBannerRoot {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-bottom: 48px;
+  @include desktop-m {
+    padding-bottom: 0px;
+  }
+  &__wrapper {
+    @include desktop-m {
+      display: flex;
+    }
+    @include desktop-l {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      max-width: 960px;
+      margin: auto;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__info {
+      margin-left: 16px;
+      margin-right: 16px;
+      @include desktop-m {
+        align-content: center;
+      }
+      &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 24px;
+        &__name {
+        }
+      }
+      &__description {
+        margin-top: 24px;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

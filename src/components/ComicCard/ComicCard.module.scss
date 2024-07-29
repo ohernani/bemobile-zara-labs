@@ -1,0 +1,21 @@
+.comicCardRoot {
+  width: 179px;
+  &__img {
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 179px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 12px;
+  }
+  &__year {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 8px;
+  }
+}

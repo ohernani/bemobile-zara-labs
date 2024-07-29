@@ -1,0 +1,31 @@
+$color-black: #000000;
+$color-light-black: #151515;
+$color-white: #ffffff;
+$color-red: #ec1d24;
+$color-dark-red: #e62429;
+$color-grey: #d9d9d9;
+
+$size-xs: 4px;
+$size-s: 8px;
+$size-m: 12px;
+$size-ml: 16px;
+$size-l: 24px;
+$size-xl: 40px;
+$size-xxl: 48px;
+
+:root {
+  --color-black: #{$color-black};
+  --color-light-black: #{$color-light-black};
+  --color-white: #{$color-white};
+  --color-red: #{$color-red};
+  --color-dark-red: #{$color-dark-red};
+  --color-grey: #{$color-grey};
+
+  --size-xs: #{$size-xs};
+  --size-s: #{$size-s};
+  --size-m: #{$size-ml};
+  --size-ml: #{$size-ml};
+  --size-l: #{$size-l};
+  --size-xl: #{$size-xl};
+  --size-xxl: #{$size-xxl};
+}

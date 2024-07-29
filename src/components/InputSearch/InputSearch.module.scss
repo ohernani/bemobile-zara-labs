@@ -1,0 +1,35 @@
+@import '../../styles/breakpoints.scss';
+.inputSearchRoot {
+  position: relative;
+  margin-top: var(--size-l);
+  margin-bottom: var(--size-l);
+  @include tablet {
+    margin-top: var(--size-xxl);
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  &__input {
+    width: 100%;
+    padding-left: 22px;
+    padding-bottom: var(--size-s);
+    border: 0;
+    border-bottom: 1px solid var(--color-black);
+    font-size: var(--size-ml);
+    font-weight: 400;
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  &__results {
+    margin-top: var(--size-m);
+    font-weight: 400;
+    font-size: var(--size-m);
+  }
+}

@@ -1,0 +1,1 @@
+export { CharacterBanner } from './CharacterBanner';
